@@ -26,11 +26,11 @@ u8 Keypad_GetPressedKey (void)
 	{
 		for (col = 0; col < N_COL; col++)
 		{
-			KEYPAD_PORT_DIR = (0b00010000 << col);
+			KEYPAD_PORT_DIR = (0b00010000<< col);
 
-			KEYPAD_PORT_OUT = (~(0b00010000 << col));
-			
+			KEYPAD_PORT_OUT = (~(0b00010000<< col));
 			for (row = 0; row < N_ROW; row++)
+			
 			{
 				if (BIT_IS_CLEAR(KEYPAD_PORT_IN,row))
 				{

@@ -13,12 +13,7 @@
 
 
 
-#if (N_COL == 3)
-
-static u8 Keypad_4x3_adjustKeyNumber (u8 button_number);
-
-
-#elif (N_COL == 4)
+#if (N_COL == 4)
 
 static u8 Keypad_4x4_adjustKeyNumber (u8 button_number);
 
@@ -39,10 +34,7 @@ u8 Keypad_GetPressedKey (void)
 			{
 				if (BIT_IS_CLEAR(KEYPAD_PORT_IN,row))
 				{
-					#if (N_COL == 3)
-
-					return Keypad_4x3_adjustKeyNumber (((row*N_COL)+col+1));
-					#elif (N_COL == 4)
+					#if (N_COL == 4)
 
 					return Keypad_4x4_adjustKeyNumber (((row*N_COL)+col+1));
 
@@ -53,29 +45,6 @@ u8 Keypad_GetPressedKey (void)
 	}
 }
 
-#if (N_COL == 3)
-
-static u8 Keypad_4x3_adjustKeyNumber (u8 button_number)
-{
-	switch (button_number)
-	{
-	case 10:
-		return '*'; //	ASCII code of *
-		break;
-	case 11:
-		return 0;
-		break;
-	case 12:
-		return '#'; //	ASCII code of #
-		break;
-	default:
-		return button_number;
-		break;
-	}
-}
-
-
-#elif (N_COL == 4)
 
 static u8 Keypad_4x4_adjustKeyNumber (u8 button_number)
 {
@@ -116,4 +85,4 @@ static u8 Keypad_4x4_adjustKeyNumber (u8 button_number)
 	}
 }
 
-#endif
+

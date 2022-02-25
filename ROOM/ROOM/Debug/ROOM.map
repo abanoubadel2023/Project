@@ -31,7 +31,7 @@ Discarded input sections
                 0x00000000       0x28 ADC.o
  .debug_ranges  0x00000000       0x18 ADC.o
  .debug_line    0x00000000       0xeb ADC.o
- .debug_str     0x00000000      0x1ba ADC.o
+ .debug_str     0x00000000      0x1b9 ADC.o
  .comment       0x00000000       0x31 ADC.o
  .debug_frame   0x00000000       0x34 ADC.o
  .text          0x00000000        0x0 DIO.o
@@ -56,8 +56,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x28 keypad.o
  .debug_ranges  0x00000000       0x18 keypad.o
- .debug_line    0x00000000      0x17e keypad.o
- .debug_str     0x00000000      0x1d1 keypad.o
+ .debug_line    0x00000000      0x17d keypad.o
+ .debug_str     0x00000000      0x1d0 keypad.o
  .comment       0x00000000       0x31 keypad.o
  .debug_frame   0x00000000       0x34 keypad.o
  .text          0x00000000        0x0 LCD.o
@@ -86,7 +86,7 @@ Discarded input sections
                 0x00000000       0x58 LCD.o
  .debug_ranges  0x00000000       0x48 LCD.o
  .debug_line    0x00000000      0x2dc LCD.o
- .debug_str     0x00000000      0x273 LCD.o
+ .debug_str     0x00000000      0x272 LCD.o
  .comment       0x00000000       0x31 LCD.o
  .debug_frame   0x00000000       0xc0 LCD.o
  .text          0x00000000        0x0 main.o
@@ -533,15 +533,15 @@ END GROUP
  .debug_frame   0x00000064       0x24 main.o
  .debug_frame   0x00000088       0x44 UART.o
 
-.debug_str      0x00000000      0x448
+.debug_str      0x00000000      0x447
  *(.debug_str)
  .debug_str     0x00000000      0x196 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega32a/avr5/crtatmega32a.o
- .debug_str     0x00000196      0x264 DIO.o
-                                0x29d (size before relaxing)
- .debug_str     0x000003fa       0x2e main.o
-                                0x230 (size before relaxing)
- .debug_str     0x00000428       0x20 UART.o
-                                0x1c2 (size before relaxing)
+ .debug_str     0x00000196      0x263 DIO.o
+                                0x29c (size before relaxing)
+ .debug_str     0x000003f9       0x2e main.o
+                                0x22f (size before relaxing)
+ .debug_str     0x00000427       0x20 UART.o
+                                0x1c1 (size before relaxing)
 
 .debug_loc      0x00000000      0x240
  *(.debug_loc)

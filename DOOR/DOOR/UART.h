@@ -17,4 +17,4 @@ void USART_sendByte (u8 data);			           // Function to send data byte
 u8 USART_receiveByte (void);			           // Function to receive data byte
 
 
-#endif /* ADC_H_ */
+#endif 

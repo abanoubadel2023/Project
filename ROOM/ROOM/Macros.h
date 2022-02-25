@@ -1,5 +1,5 @@
-#ifndef UTLIS_MACROS_H_
-#define UTLIS_MACROS_H_
+#ifndef MACROS_H_
+#define MACROS_H_
 
 #define SET_BIT(REG_Name,PIN_NO) REG_Name |= (1<<PIN_NO)			//Macro to set certain bit in certain register
 #define CLEAR_BIT(REG_Name,PIN_NO) REG_Name &= (~(1<<PIN_NO))		//Macro to set certain bit in certain register

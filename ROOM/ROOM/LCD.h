@@ -1,5 +1,5 @@
-#ifndef MCAL_LCD_H_
-#define MCAL_LCD_H_
+#ifndef LCD_H_
+#define LCD_H_
 
 #include <avr/io.h>
 #include "Macros.h"

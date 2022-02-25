@@ -1,5 +1,5 @@
-#ifndef MCAL_UART_UART_H_
-#define MCAL_UART_UART_H_
+#ifndef UART_H_
+#define UART_H_
 
 #include <avr/io.h>
 #include <avr/interrupt.h>

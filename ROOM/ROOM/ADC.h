@@ -1,7 +1,7 @@
 
 
-#ifndef MCAL_ADC_ADC_H_
-#define MCAL_ADC_ADC_H_
+#ifndef ADC_H_
+#define ADC_H_
 
 #include "Macros.h"
 #include "Std_Types.h"
