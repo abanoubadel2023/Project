@@ -1,5 +1,5 @@
-#ifndef MCAL_UART_UART_H_
-#define MCAL_UART_UART_H_
+#ifndef UART_H_
+#define UART_H_
 
 #include <avr/io.h>
 #include <avr/interrupt.h>
@@ -18,4 +18,4 @@ u8 USART_receiveByte (void);			// Function to receive data byte
 void USART_sendString (const u8 *str);	// Function to send string
 void USART_receiveString (u8 *str);		// Function to receive string
 
-#endif /* MCAL_ADC_ADC_H_ */
+#endif 

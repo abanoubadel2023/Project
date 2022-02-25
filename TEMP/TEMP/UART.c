@@ -48,28 +48,3 @@ u8 USART_receiveByte (void)				// Function to receive data byte
 	return UDR;							// Return the data from UDR register
 }
 
-/*
-void USART_sendString (const u8 *str)	// Function to send string
-{
-	u8 i = 0;
-
-	while (str[i] != '\0')
-	{
-		USART_sendByte(str[i]);
-		i++;
-	}
-}
-
-void USART_receiveString (u8 *str)		// Function to receive string
-{
-
-	u8 i = 0;
-	str[i] = USART_receiveByte();
-	while (str[i] != "#")
-	{
-		i++;
-		str[i] =USART_receiveByte();
-	}
-	str[i] = '\0';
-}
-*/

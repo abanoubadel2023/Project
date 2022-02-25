@@ -51,8 +51,6 @@ u8 Keypad_GetPressedKey (void)
 
 
 
-#if (N_COL == 4)
-
 static u8 Keypad_4x4_adjustKeyNumber (u8 button_number)
 {
 	switch (button_number)
@@ -92,4 +90,4 @@ static u8 Keypad_4x4_adjustKeyNumber (u8 button_number)
 	}
 }
 
-#endif
+

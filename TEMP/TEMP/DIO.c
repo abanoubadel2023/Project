@@ -1,7 +1,6 @@
 #include "DIO.h"
 #include <avr/io.h>
 
-//	For Certain Bit
 
 void Set_PinDir (GroupName_t group, PIN_NO_t number, PinDir_t direction)	// Function to set direction of certain bit
 {
