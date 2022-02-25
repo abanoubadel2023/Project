@@ -50,7 +50,7 @@ Discarded input sections
                 0x00000000       0x30 UART.o
  .debug_ranges  0x00000000       0x20 UART.o
  .debug_line    0x00000000      0x10c UART.o
- .debug_str     0x00000000      0x1d2 UART.o
+ .debug_str     0x00000000      0x1c1 UART.o
  .comment       0x00000000       0x31 UART.o
  .debug_frame   0x00000000       0x44 UART.o
  .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
@@ -553,13 +553,13 @@ END GROUP
  .debug_abbrev  0x00000628      0x1b7 LCD.o
  .debug_abbrev  0x000007df      0x18c main.o
 
-.debug_line     0x00000000      0xc20
+.debug_line     0x00000000      0xc22
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x116 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega32a/avr5/crtatmega32a.o
  .debug_line    0x00000116      0x261 DIO.o
  .debug_line    0x00000377      0x17d keypad.o
- .debug_line    0x000004f4      0x2dc LCD.o
- .debug_line    0x000007d0      0x450 main.o
+ .debug_line    0x000004f4      0x2de LCD.o
+ .debug_line    0x000007d2      0x450 main.o
 
 .debug_frame    0x00000000      0x17c
  *(.debug_frame)
@@ -568,17 +568,17 @@ END GROUP
  .debug_frame   0x00000098       0xc0 LCD.o
  .debug_frame   0x00000158       0x24 main.o
 
-.debug_str      0x00000000      0x57d
+.debug_str      0x00000000      0x56c
  *(.debug_str)
  .debug_str     0x00000000      0x196 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega32a/avr5/crtatmega32a.o
- .debug_str     0x00000196      0x26d DIO.o
-                                0x2ad (size before relaxing)
- .debug_str     0x00000403       0x4c keypad.o
-                                0x1e1 (size before relaxing)
- .debug_str     0x0000044f       0xdb LCD.o
-                                0x283 (size before relaxing)
- .debug_str     0x0000052a       0x53 main.o
-                                0x346 (size before relaxing)
+ .debug_str     0x00000196      0x25c DIO.o
+                                0x29c (size before relaxing)
+ .debug_str     0x000003f2       0x4c keypad.o
+                                0x1d0 (size before relaxing)
+ .debug_str     0x0000043e       0xdb LCD.o
+                                0x272 (size before relaxing)
+ .debug_str     0x00000519       0x53 main.o
+                                0x335 (size before relaxing)
 
 .debug_loc      0x00000000     0x11e6
  *(.debug_loc)

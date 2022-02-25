@@ -1,6 +1,6 @@
 
-#ifndef MCAL_DIO_H_
-#define MCAL_DIO_H_
+#ifndef DIO_H_
+#define DIO_H_
 
 #include "Std_Types.h"
 #include "Macros.h"
@@ -46,12 +46,9 @@ typedef enum
 
 
 
-//	For Certain Bit
 void Set_PinDir (GroupName_t group, PIN_NO_t number, PinDir_t direction);	// Function to set direction of certain bit
 void Set_PinLevel (GroupName_t group, PIN_NO_t number, PinLevel_t level );	// Function to set level of certain bit
 RET_VALUE_t Read_PinLevel (GroupName_t group, PIN_NO_t number);				// Function to read level of certain bit
-
-//	 For Group Of Pins
 void Set_GroupDir (GroupName_t group, u8 value);							// Function to set direction of group of pins
 void Set_GroupLevel (GroupName_t group, u8 value);							// Function to set level of group of pins
 

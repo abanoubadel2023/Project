@@ -1,5 +1,5 @@
-#ifndef MCAL_LCD_H_
-#define MCAL_LCD_H_
+#ifndef LCD_H_
+#define LCD_H_
 
 #include <avr/io.h>
 #include "Macros.h"
@@ -22,11 +22,11 @@
 
 // LCD Commands
 
-#define CLEAR_COMMAND 0x01
-#define TWO_LINE_LCD_EIGHT_BIT_MODE 0x38
-#define CURSOR_OFF 0x0C
-#define CURSOR_ON 0x0E
-#define SET_CURSOR_LOCATION 0x80
+#define CLEAR_COMMAND                   0x01
+#define TWO_LINE_LCD_EIGHT_BIT_MODE     0x38
+#define CURSOR_OFF                      0x0C
+#define CURSOR_ON                       0x0E
+#define SET_CURSOR_LOCATION             0x80
 
 
 

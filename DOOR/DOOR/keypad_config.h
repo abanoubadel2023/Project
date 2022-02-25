@@ -1,7 +1,6 @@
+#ifndef KEYPAD_CONFIG_H_
+#define KEYPAD_CONFIG_H_
 
-
-#ifndef HAL_KEYPAD_KEYPAD_CONFIG_H_
-#define HAL_KEYPAD_KEYPAD_CONFIG_H_
 #include <avr/io.h>
 
 

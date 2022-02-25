@@ -17,15 +17,15 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
   6 .debug_abbrev 0000096b  00000000  00000000  000026e9  2**0
                   CONTENTS, READONLY, DEBUGGING
-  7 .debug_line   00000c20  00000000  00000000  00003054  2**0
+  7 .debug_line   00000c22  00000000  00000000  00003054  2**0
                   CONTENTS, READONLY, DEBUGGING
-  8 .debug_frame  0000017c  00000000  00000000  00003c74  2**2
+  8 .debug_frame  0000017c  00000000  00000000  00003c78  2**2
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_str    0000057d  00000000  00000000  00003df0  2**0
+  9 .debug_str    0000056c  00000000  00000000  00003df4  2**0
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_loc    000011e6  00000000  00000000  0000436d  2**0
+ 10 .debug_loc    000011e6  00000000  00000000  00004360  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_ranges 000000b8  00000000  00000000  00005553  2**0
+ 11 .debug_ranges 000000b8  00000000  00000000  00005546  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -506,7 +506,7 @@ u8 Keypad_GetPressedKey (void)
  2f0:	80 e0       	ldi	r24, 0x00	; 0
  2f2:	22 c0       	rjmp	.+68     	; 0x338 <Keypad_GetPressedKey+0x48>
 		{
-			KEYPAD_PORT_DIR = (0x10<< col);
+			KEYPAD_PORT_DIR = (0b00010000 << col);
  2f4:	20 e1       	ldi	r18, 0x10	; 16
  2f6:	30 e0       	ldi	r19, 0x00	; 0
  2f8:	08 2e       	mov	r0, r24
@@ -517,7 +517,7 @@ u8 Keypad_GetPressedKey (void)
  302:	e2 f7       	brpl	.-8      	; 0x2fc <Keypad_GetPressedKey+0xc>
  304:	2a bb       	out	0x1a, r18	; 26
 
-			KEYPAD_PORT_OUT = (~(0x10<< col));
+			KEYPAD_PORT_OUT = (~(0b00010000 << col));
  306:	20 95       	com	r18
  308:	2b bb       	out	0x1b, r18	; 27
 			
@@ -547,9 +547,9 @@ u8 Keypad_GetPressedKey (void)
  32a:	0e 94 4d 01 	call	0x29a	; 0x29a <Keypad_4x4_adjustKeyNumber>
  32e:	08 95       	ret
 		{
-			KEYPAD_PORT_DIR = (0x10<< col);
+			KEYPAD_PORT_DIR = (0b00010000 << col);
 
-			KEYPAD_PORT_OUT = (~(0x10<< col));
+			KEYPAD_PORT_OUT = (~(0b00010000 << col));
 			
 			for (row = 0; row < N_ROW; row++)
  330:	9f 5f       	subi	r25, 0xFF	; 255
