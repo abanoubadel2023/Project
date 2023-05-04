@@ -1,9 +1,3 @@
-/*
- * room.c
- *
- * Created: 2022-02-13 8:19:04 PM
- * Author : Ahmed Elnakeeb
- */ 
 
 
 #include "DIO.h"
